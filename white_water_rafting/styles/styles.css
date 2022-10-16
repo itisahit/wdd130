@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nothing+You+Could+Do&family=Permanent+Marker&family=Sedgwick+Ave&family=Smooch&family=Ubuntu:ital@1&display=swap');
+
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -6,6 +9,7 @@ nav a {
     text-align: center;
     color: #0da505;
     text-decoration: none;
+    padding: 35px;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
@@ -23,6 +27,10 @@ main {
 
 body {
     background-color: #323e6a;
+    font-family: Ubuntu, Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
 }
 header {
     background-color: #ffea00;
@@ -35,6 +43,10 @@ nav a:hover {
     background-color: #ffea00;
     color: #0da505;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: #0da505;
@@ -42,22 +54,33 @@ nav a:hover {
 }
 .msg {
     background-color: #01528f;
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer {
     background-color: #ffea00;
     color: #0da505;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 .home-title {
     color: #f5ffd3;
+    font-family: Smooch, "Brush Script MT", Georgia ;
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4 {
     color: #f5ffd3;
 }
 .msg h2 {
     color: #f5ffd3;
+    font-family: Smooch, "Brush Script MT", Georgia ;
+    font-size: 1.6em ;
 }
 .msg p {
     color: #f5ffd3;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer a {
     color: #0da505;
@@ -69,12 +92,14 @@ footer a:hover {
 }
 h2 {
     color: #f5ffd3;
+    margin: 0;
 }
 .logo {
     width: 80px;
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
@@ -84,4 +109,19 @@ footer p {
 }
 footer p a:hover {
     text-decoration: underline;
+}
+#logo_link {
+    padding-top: 5px;
+}
+footer .social img {
+    padding-top: 15px;
+}  
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #ffea00;
+} 
+main section img {
+    box-sizing: border-box;
 }

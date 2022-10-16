@@ -1,0 +1,30 @@
+#background {
+    background-color: gray;
+    width: 100%;
+    max-width: 1600px;
+}
+#hero_img {
+    width: 100%;
+    max-width: 1600px;
+}
+#links {
+    width: 100%;
+}
+#link1 {
+    margin: 6% 3% 6% 9%;
+    border-radius: 50%;
+    border: 14px solid black;
+    width: 20%;
+}
+#link2 {
+    margin: 6% 3%;
+    border-radius: 50%;
+    border: 14px solid black;
+    width: 20%;
+}
+#link3 {
+    margin: 6% 9% 6% 3%;
+    border-radius: 50%;
+    border: 14px solid black;
+    width: 20%;
+}
