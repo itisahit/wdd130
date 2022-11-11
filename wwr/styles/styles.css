@@ -7,7 +7,7 @@
 }
 nav a {
     text-align: center;
-    color: #0da505;
+    color: #076802;
     text-decoration: none;
     padding: 35px;
 }
@@ -49,7 +49,7 @@ nav a:hover {
 }
 .book, .join {
     background-color: #ffea00;
-    color: #0da505;
+    color: #076802;
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
@@ -70,9 +70,9 @@ nav a:hover {
 }
 footer {
     background-color: #ffea00;
-    color: #0da505;
+    color: #076802;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -81,7 +81,7 @@ footer {
     color: #f5ffd3;
     font-family: Smooch, "Brush Script MT", Georgia ;
     font-size: 2.5em;
-    margin-top: 50px;
+    margin-top: 60px;
     line-height: 30%;
 }
 h4 {
@@ -98,7 +98,7 @@ h4 {
     padding-bottom: 15px;
 }
 footer a {
-    color: #0da505;
+    color: #076802;
     text-decoration: none;
 }
 footer a:hover {
@@ -186,6 +186,32 @@ main section img {
     grid-column: 8/10;
     grid-row: 2/3;
 }
+/* ---------------------------------------------------------------------------- */
+.faq-slogan {
+    color: #f5ffd3;
+    text-shadow: 0px 0px 10px #323e6a;
+    font-family: Smooch, "Brush Script MT", Georgia ;
+    font-size: 2.5em;
+    margin-top: 60px;
+    line-height: 30%;
+}
+#faq-motto {
+    color: #f5ffd3;
+    text-shadow: 0px 0px 10px #323e6a;
+}
+.faq-grid {
+    margin: 50px 20px;
+}
+.faq-question {
+    text-align: left;
+    color: #f5ffd3;
+    margin-top: 50px;
+}
+.faq-question h3 {
+    color: #ffea00;
+}
+
+/* ------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -210,7 +236,6 @@ main section img {
     }
     .home-title {
         font-size: 25px;
-        color: #6f7364;
     }
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
