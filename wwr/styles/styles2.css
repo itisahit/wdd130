@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nothing+You+Could+Do&family=Permanent+Marker&family=Sedgwick+Ave&family=Smooch&family=Ubuntu:ital@1&display=swap');
 
-/* CONTENT -------------------------------------- */
+/* ---------- HOME PAGE ------------ */
+/* ------------- CONTENT ------------- */
 body {
     background-color: #323e6a;
     font-family: Ubuntu, Helvetica, sans-serif;
@@ -13,7 +14,8 @@ body {
     margin: 0 auto;
 }
 
-/* HEADER -------------------------------------- */
+
+/* -------------- HEADER ------------- */
 header {
     background-color:  rgb(255, 234, 0, 0.8); 
     display: grid;
@@ -24,11 +26,9 @@ header {
     justify-self: center;
     align-self: center;
 }
-
 .logo {
     width: 80px;
 }
-
 nav {
     display: flex;
     justify-content: space-around;
@@ -44,27 +44,26 @@ nav a:hover {
     color: #f5ffd3;
 }
 
-/* HERO -------------------------------------- */
-#hero-msg h1, #hero-msg h4 {
-    text-align: center;
-}
-#hero-img {
-    width: 100%;
-}
+
+/* -------------- HERO --------------- */
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     margin-top: -100px;
 }
 #hero-box {
-    grid-column: 1/4;
-    grid-row: 1/3;
+    grid-area: 1/1/3/4;
     z-index: -1;
 }
+#hero-img {
+    width: 100%;
+}
 #hero-msg {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-area: 1/2/2/3 ;
     margin-top: 100px;
+}
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
 }
 .home-title {
     color: #f5ffd3;
@@ -72,6 +71,9 @@ nav a:hover {
     font-size: 2.5em;
     margin-top: 60px;
     line-height: 30%;
+}
+h4 {
+    color: #f5ffd3;
 }
 .button-box {
     text-align: center;
@@ -90,23 +92,29 @@ nav a:hover {
     color: #f5ffd3;
 }
 
-/* MAIN -------------------------------------- */
+
+/* ----------- MAIN GRID ------------- */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
 main {
-    text-align: center
+    text-align: center;
 }
-#background {
-    height: 725px;
-    background-color: #0da505;
-    grid-column: 1/11;
-    grid-row: 4/9;
+main section img {
+    box-sizing: border-box;
 }
-.msg {
-    background-color: #01528f;
-    line-height: 1.5em;
-    padding: 35px;
-    grid-column: 6/10;
-    grid-row: 6/7;
-    box-shadow: 5px 5px 10px #222b07;
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.camping-card {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+.rapids-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
 }
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
@@ -121,55 +129,34 @@ main {
     opacity: .8;
     transform: scale(1.2);
 }
-
-/* FOOTER -------------------------------------- */
-footer {
-    background-color: #ffea00;
-    color: black;
-    padding: 25px 50px;
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.icon {
+    width: 80px;
+    padding-top: 10px;
 }
-footer a {
-    color: black;
-    text-decoration: none;
-}
-footer a:hover {
-    background-color: #0da505;
+h2 {
     color: #f5ffd3;
+    margin: 0;
 }
-footer p {
-    font-size: 1.3em;
+
+
+/* --------- MAIN BACKGROUND ------------ */
+#background {
+    height: 725px;
+    background-color: red;
+    grid-area: 4/1/9/11;
 }
-footer p a:hover {
-    text-decoration: underline;
+.mountains {
+    width: 100%;
+    grid-area: 5/2/8/7;
+    box-shadow: 5px 5px 10px #222b07;
 }
-footer .social img {
-    padding-top: 15px;
-}  
-
-/* -------------------------------------- */
-/* -------------------------------------- */
-/* -------------------------------------- */
-/* -------------------------------------- */
-/* -------------------------------------- */
-/* -------------------------------------- */
-/* -------------------------------------- */
-/* -------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-h4 {
-    color: #f5ffd3;
+.msg {
+    background-color: #01528f;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-row: 6/7;
+    grid-column: 6/10;
+    box-shadow: 5px 5px 10px #222b07;
 }
 .msg h2 {
     color: #f5ffd3;
@@ -182,47 +169,37 @@ h4 {
     padding-bottom: 15px;
 }
 
-h2 {
+
+/* ----------------- FOOTER -------------------------------------- */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffea00;
+    color: black;
+    padding: 25px 50px;
+    margin-top: 100px;
+}
+footer p {
+    font-size: 1.3em;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+footer a:hover {
+    background-color: #0da505;
     color: #f5ffd3;
-    margin: 0;
 }
-
-.icon {
-    width: 80px;
-    padding-top: 10px;
-}
+.social a img {
+    padding-top: 15px;
+}  
 
 
-
-
-
-main section img {
-    box-sizing: border-box;
-}
-
-.home-grid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-}
-.mountains {
-    width: 100%;
-    grid-column: 2/7;
-    grid-row: 5/8;
-    box-shadow: 5px 5px 10px #222b07;
-}
-.rivers-card {
-    grid-column: 2/4;
-    grid-row: 2/3;
-}
-.camping-card {
-    grid-column: 5/7;
-    grid-row: 2/3;
-}
-.rapids-card {
-    grid-column: 8/10;
-    grid-row: 2/3;
-}
-/* ---------------------------------------------------------------------------- */
+/* ---------------- FAQ PAGE ---------------------------------------------------------------------------- */
 .faq-slogan {
     color: #f5ffd3;
     text-shadow: 0px 0px 10px #323e6a;
@@ -247,7 +224,7 @@ main section img {
     color: #ffea00;
 }
 
-/* ------------------------------------------------------------------------------- */
+/* ----------- CONTACT US PAGE ------------------------------------------------------------------------------- */
 
 form {
     /* Center the form on the page */
@@ -334,7 +311,7 @@ form {
     margin-top: 3em;
 }
 
-/* ------------------------------------------------------------------------------- */
+/* --------------- QUERRY --------------- */
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
