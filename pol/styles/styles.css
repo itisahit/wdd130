@@ -2,7 +2,7 @@
 
 /* ---------------- HOME PAGE --------------*/
 
-/* --------------- BODY ---------------*/
+/* ----------------- BODY ------------------*/
 body {
     background-color: #c5ffbd;
     max-width: 1600px;
@@ -18,7 +18,7 @@ h1, h2, h3, h4 {
     word-spacing: 5px;
 }
 
-/* ----------------HEADER------------- */
+/* ---------------- HEADER ---------------- */
 header {
     background-color: #4ec423;
     display: grid;
@@ -54,7 +54,7 @@ nav a:hover {
 }
 
 
-/* -------------- SLIDESSHOW CONTAINER -----------------*/
+/* --------- SLIDESSHOW CONTAINER ----------*/
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -91,7 +91,8 @@ nav a:hover {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a black background color with a 
+little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -144,7 +145,7 @@ nav a:hover {
 }
 
 
-/* -------------------BANNER-------------- */
+/* ----------------- BANNER ---------------- */
 #banner {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr; 
@@ -184,7 +185,7 @@ nav a:hover {
     color: white;
     font-size: 120%;
 }
-/* ---------- BANNER FAQ PAGE ---------*/
+/* ----------- BANNER FAQ PAGE ------------*/
 #faq-banner-msg {
     grid-area: 1/2/2/3;
     text-align: center;
@@ -197,7 +198,7 @@ nav a:hover {
 } 
 
 
-/* -------------BACKGROUND------------ */
+/* ------------- BACKGROUND ------------- */
 #pitch {
     background-color: #6e58bb;
     color: white;
@@ -207,7 +208,7 @@ nav a:hover {
     line-height: 1.3;
 }
 
-/* --------------ARTICLES---------------- */
+/* --------------- ARTICLES -------------- */
 #aboutus {
     padding: 50px 100px;
 }
@@ -225,7 +226,7 @@ nav a:hover {
     padding: 0 0 0 40px;
 }
 
-/* ---------------FOOTER------------ */
+/* --------------- FOOTER -------------- */
 footer {
     display: flex;
     background-color: #4ec423;
@@ -261,7 +262,7 @@ footer a:hover {
     transform: scale(1.2);
 }
 
-/* ------------------ FAQ PAGE ------------*/
+/* ---------------- FAQ PAGE --------------*/
 #questions-box h2 {
     padding: 50px 100px 0 100px;
     color: #339410;
