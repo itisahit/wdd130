@@ -185,18 +185,42 @@ little bit see-through */
     color: white;
     font-size: 120%;
 }
+
 /* ----------- BANNER FAQ PAGE ------------*/
 #faq-banner-msg {
     grid-area: 1/2/2/3;
     text-align: center;
 }
+#faq-banner-msg h1 {
+    color: #f023ff;
+    text-shadow: 2px 5px 10px black;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
 #faq-banner-msg h4 {
-    color: rgb(255, 238, 0);
+    color: rgb(208, 248, 89);
     text-shadow: 2px 5px 10px black;
     margin: 30px;
     margin-top: 15px;
 } 
 
+/* --------------- BANNER PRODUCTS PAGE --------*/
+#products-banner-msg {
+    grid-area: 1/2/2/3;
+    text-align: center;
+}
+#products-banner-msg h1 {
+    color: #ff2382;
+    text-shadow: 2px 5px 10px black;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+#products-banner-msg h4 {
+    color: rgb(255, 217, 0);
+    text-shadow: 2px 5px 10px black;
+    margin: 30px;
+    margin-top: 15px;
+}
 
 /* ------------- BACKGROUND ------------- */
 #pitch {
@@ -291,4 +315,45 @@ footer a:hover {
 
 #question3 h4 {
     line-height: 1.5;
+}
+
+
+/*------------ PRODUCTS PAGE ---------------*/
+#products-box h2 {
+    padding: 50px 100px 20px 100px;
+    color:  #339410;
+    text-align: center;
+}
+#ponds h3, #plants h3, #fishes h3 {
+    font-family: Yantramanav, Verdana, sans-serif;
+    font-size: 1.1em;
+    word-spacing: normal;
+}
+#presentation h3 {
+    font-family: Yantramanav, Verdana, sans-serif;
+    font-size: 1.1em;
+    word-spacing: normal;
+    padding: 30px;
+    text-align: center;
+}
+#ponds, #plants, #fishes {
+    padding: 20px 100px;
+} 
+#ponds {
+    padding: 0 100px 20px 100px;
+}
+#ponds h3 img {
+    float: left;
+    width: 50%;
+    padding: 0 40px 20px 0;
+}
+#plants h3 img {
+    float: right;
+    width: 50%;
+    padding: 10px 0 20px 40px;
+}
+#fishes h3 img {
+    float: left;
+    width: 50%;
+    padding: 10px 40px 5px 0;
 }
